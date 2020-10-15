@@ -46,7 +46,7 @@ function vendor() {
 
 echo "Vendoring binaries" | arrow
 
-vendor "wget https://api.github.com/repos/libvips/libvips/tarball" "$BUILD_DIR/vendor/vips" # FIXME: unharcode version
+vendor "wget -c https://api.github.com/repos/libvips/libvips/tarball" "$BUILD_DIR/vendor/vips" # FIXME: unharcode version
 
 echo "Tweaking glib include paths" | arrow
 
