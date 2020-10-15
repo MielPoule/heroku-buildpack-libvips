@@ -48,7 +48,7 @@ function vendor() {
 
 echo "Vendoring binaries" | arrow
 
-vendor "wget https://fossies.org/linux/privat/vips-8.10.2.tar.gz" "$BUILD_DIR/vendor/vips" # FIXME: unharcode version
+vendor "wget https://github.com/libvips/libvips/releases/download/v8.10.2/vips-8.10.2.tar.gz" "$BUILD_DIR/vendor/vips" # FIXME: unharcode version
 
 echo "Tweaking glib include paths" | arrow
 
